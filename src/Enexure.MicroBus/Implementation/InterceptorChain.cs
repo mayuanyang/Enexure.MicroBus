@@ -16,5 +16,14 @@ namespace Enexure.MicroBus
 		{
 			return handle(message);
 		}
+
+	    public Task<object> Handle(object message, Predicate<object> filter)
+	    {
+	        if (filter(message))
+	        {
+	            return Handle(message);
+	        }
+	        return Task.FromResult(message);
+	    }
 	}
 }

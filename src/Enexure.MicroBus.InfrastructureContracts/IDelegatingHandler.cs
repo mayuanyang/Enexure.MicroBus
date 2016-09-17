@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
 namespace Enexure.MicroBus
 {
@@ -10,5 +11,7 @@ namespace Enexure.MicroBus
 	public interface INextHandler
 	{
 		Task<object> Handle(object message);
-	}
+
+        Task<object> Handle(object message, Predicate<object> filter);
+    }
 }

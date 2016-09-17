@@ -4,7 +4,7 @@
 	"description": "Contains the core implementation of MicroBus",
 	"packOptions": {
 		"owners": [ "lavinski" ],
-		"copyright": "Copyright © Daniel Little 2015",
+		"copyright": "Copyright ?Daniel Little 2015",
 		"tags": [ "MicroBus", "Mediator", "Core", "Bus" ],
 		"releaseNotes": "",
 		"licenseUrl": "https://github.com/Lavinski/Enexure.MicroBus/blob/master/License.md",
